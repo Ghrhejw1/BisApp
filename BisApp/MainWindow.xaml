@@ -1,0 +1,45 @@
+﻿<Window x:Class="BisApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BisApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="231*"/>
+            <ColumnDefinition Width="769*"/>
+        </Grid.ColumnDefinitions>
+        <!-- Шапка приложения -->
+        <Grid Background="#2C3E50" Height="60" VerticalAlignment="Top" Grid.ColumnSpan="2">
+            <TextBlock Text="Эстетика Пространства" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="20,0,0,0" FontSize="20"/>
+            <Button Content="Создать окно" HorizontalAlignment="Right" Width="100" Height="50"/>
+            <!-- Дополнительные элементы шапки, например, кнопки входа или меню, можно добавить здесь -->
+        </Grid>
+        <!-- Основное содержимое приложения -->
+        <Grid Margin="20,80,20,20" Grid.ColumnSpan="2">
+            <!-- Секция для отображения проектов или списка услуг бюро -->
+            <StackPanel>
+                <TextBlock Text="Новые проекты" FontSize="18" FontWeight="Bold" Margin="0,0,0,10"/>
+                <!-- Здесь могут быть элементы, отображающие список проектов, их статус и другую информацию -->
+            </StackPanel>
+
+            <!-- Секция для контактной информации и связи -->
+            <StackPanel Margin="0,30,0,0">
+                <TextBlock Text="Контакты" FontSize="18" FontWeight="Bold"/>
+                <!-- Здесь могут быть элементы, отображающие адрес, телефон, электронную почту и т.д. -->
+            </StackPanel>
+
+            <!-- Секция для новостей и обновлений -->
+            <StackPanel Margin="0,-19,0,49">
+                <TextBlock Text="Новости и обновления" FontSize="18" FontWeight="Bold" Margin="0,0,0,10"/>
+                <!-- Здесь могут быть элементы, отображающие последние новости и события бюро -->
+            </StackPanel>
+        </Grid>
+        <!-- Подвал приложения -->
+        <Grid Background="#2C3E50" Height="40" VerticalAlignment="Bottom" Grid.ColumnSpan="2">
+            <TextBlock Text="© 2023 Architectural Bureau. All rights reserved." Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        </Grid>
+    </Grid>
+</Window>
